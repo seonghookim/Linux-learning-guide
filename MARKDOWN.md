@@ -11,7 +11,6 @@ Markdown 中，你只需要在文本前面加上 #+空格 即可。
 
 ## 2、列表
 ![](images/liebiao.png) 
-<br/>
 
 ## 3、字体
  
