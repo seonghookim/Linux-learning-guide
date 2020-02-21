@@ -10,13 +10,7 @@ Markdown 中，你只需要在文本前面加上 #+空格 即可。
 <br/>
 
 ## 2、列表
-- 文本1 &nbsp;&nbsp;&nbsp; ( - 文本1 )
-- 文本2 &nbsp;&nbsp;&nbsp;( - 文本2 )
-- 文本3 &nbsp;&nbsp;&nbsp;( - 文本3 )
-
-1. 文本1
-2. 文本2
-3. 文本3
+![](public/liebiao.png)  
 <br/>
 
 ## 3、字体
