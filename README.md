@@ -3,5 +3,5 @@
 
 ## 目录
 * [Introduction](README.md)
-* [系统安装](安装系统.md)
+* 系统安装
   * [ip-zlib\(ok\)](系统安装/ip.md)
