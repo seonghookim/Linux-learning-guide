@@ -10,7 +10,7 @@ Markdown 中，你只需要在文本前面加上 #+空格 即可。
 <br/>
 
 ## 2、列表
-![](https://github.com/seonghookim/Linux-learning-guide/blob/readme-editor/images/liebiao.png)
+![](images/liebiao.png)
 ## 3、字体
  
 *斜体* &nbsp;&nbsp;&nbsp;  \*斜体* <br/>
