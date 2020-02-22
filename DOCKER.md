@@ -45,8 +45,10 @@ docker pull rabbitmq:management
 
 ## 启动Docker镜像  
 * 启动nginx
-  * 生成本地工作目录  
+  * 生成宿主机工作目录  
   ```bash
-  mkdir /usr/local/docker/nginx -p
+    mkdir /usr/local/docker/nginx -p
+    cd /usr/local/docker/nginx
+    mkdir conf html logs
   ```
   * docker run -p 8089:80 --name nginx -d nginx
