@@ -37,18 +37,64 @@ CentOS Linux release 7.7.1908 (Core)
 
 ## Docker镜像下载  
 到[Docker hub](https://hub.docker.com/)查询镜像。  
-docker pull nginx  
-docker pull tomcat  
-docker pull redis  
-docker pull mysql/mysql-server  
-docker pull rabbitmq:management  
+* 查看容器状态
+```bash
+  docker pull nginx  
+  docker pull tomcat  
+  docker pull redis  
+  docker pull mysql/mysql-server  
+  docker pull rabbitmq:management
+```
 
+ 
 ## 启动Docker镜像  
-* 启动nginx
-  * 生成宿主机工作目录  
+* nginx
+  * 生成宿主机工作目录
   ```bash
     mkdir /usr/local/docker/nginx -p
     cd /usr/local/docker/nginx
     mkdir conf html logs
   ```
-  * docker run -p 8089:80 --name nginx -d nginx
+  * 生成docker-compose.yml文件
+  ```bash
+    vi docker-compose.yml
+    ---docker-compose.yml文件---
+    version: '3'
+    services:
+      nginx:
+        container_name: nginx
+        image: nginx
+        #build: .
+        privileged: true
+        restart: always
+        volumes:
+          - /usr/local/docker/nginx/html:/usr/share/nginx/html
+          - /usr/local/docker/nginx/conf:/etc/nginx
+          - /usr/local/docker/nginx/logs:/var/log/nginx
+          #- /usr/local/docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+          #- /data/nginx/conf.d:/etc/nginx/conf.d
+          #- ${NGINX_DIR}/logs:/var/log/nginx
+        ports:
+          - 80:80
+    -------------------------
+  ```
+  * 启动容器
+  ```bash
+    docker-compose up -d
+  ```
+  * 查看容器状态
+  ```bash
+    docker ps -a
+  ```
+  * 进入容器
+  ```bash
+    docker exec -it nginx /bin/bash
+  ```  
+  * 停止容器
+  ```bash
+    docker stop nginx
+  ```
+  * 删除容器
+  ```bash
+    docker rm nginx
+  ```
