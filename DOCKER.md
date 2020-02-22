@@ -37,7 +37,7 @@ CentOS Linux release 7.7.1908 (Core)
 
 ## Docker镜像下载  
 到[Docker hub](https://hub.docker.com/)查询镜像。  
-* 查看容器状态
+* 下载镜像
 ```bash
   docker pull nginx  
   docker pull tomcat  
@@ -45,8 +45,14 @@ CentOS Linux release 7.7.1908 (Core)
   docker pull mysql/mysql-server  
   docker pull rabbitmq:management
 ```
-
- 
+* 查询下载镜像
+```bash
+  docker images
+```
+* 删除镜像
+```bash
+  docker rmi <image_name|image_Id(前3位即可)>
+``` 
 ## 启动Docker镜像  
 * nginx
   * 生成宿主机工作目录
