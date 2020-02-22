@@ -4,10 +4,7 @@
 ## 2、列表
 ![](images/list.png)
 ## 3、字体
- 
-*斜体* &nbsp;&nbsp;&nbsp;  \*斜体* <br/>
-**粗体** &nbsp;&nbsp;&nbsp; \*\*粗体** <br/>
-***粗斜题*** &nbsp;&nbsp;&nbsp;  \*\*\*粗斜题***
+![](images/zitiyangshi.png) 
 
 ## 4、链接
 [百度](www.baidu.com "悬停显示: 即在URL之后 用双引号括起来一个字符串。同样要注意这里是英文双引号") &nbsp;&nbsp;&nbsp; \[百度](www.baidu.com "悬停显示: 即在URL之后 用双引号括起来一个字符串。同样要注意这里是英文双引号")
