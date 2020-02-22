@@ -6,7 +6,7 @@
 - [启动docker服务](#启动docker服务)
 - [Docker镜像加速](#Docker镜像加速)
 - [Docker镜像下载](#Docker镜像下载)
-
+- [启动Docker镜像](#启动Docker镜像)
 ## 查看linux发行版，内核
 [root@localhost ~]# cat /etc/redhat-release  #查看版本号  
 CentOS Linux release 7.7.1908 (Core)  
@@ -36,11 +36,17 @@ CentOS Linux release 7.7.1908 (Core)
 [root@localhost ~]# systemctl restart docker #事后重启docker  
 
 ## Docker镜像下载  
-到[Docker hub](https://hub.docker.com/)查询镜像。
-docker search nginx #就找第一个，下载最多的，官方镜像
+到[Docker hub](https://hub.docker.com/)查询镜像。  
 docker pull nginx  
 docker pull tomcat  
 docker pull redis  
 docker pull mysql/mysql-server  
 docker pull rabbitmq:management  
 
+## 启动Docker镜像  
+* 启动nginx
+  * 生成本地工作目录  
+  ```bash
+  mkdir /usr/local/docker/nginx -p
+  ```
+  * docker run -p 8089:80 --name nginx -d nginx
