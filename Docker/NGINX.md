@@ -37,8 +37,8 @@ docker run --name=nginx --restart=always privileged=true -v /usr/local/docker/ng
         image: nginx
     ```
   * 启动  
-  ```
-  docker-compose up -d  
-  ```
+    ```
+    docker-compose up -d  
+    ```
 * 使用Dockerfile文件启动  
   待续...
