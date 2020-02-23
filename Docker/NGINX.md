@@ -25,15 +25,12 @@ docker run --name=nginx --restart=always privileged=true -v /usr/local/docker/ng
     services:
       nginx:
         container_name: nginx
-        #build: .
         privileged: true
         restart: always
         volumes:
           - /usr/local/docker/nginx/html:/usr/share/nginx/html
           - /usr/local/docker/nginx/conf:/etc/nginx
           - /usr/local/docker/nginx/logs:/var/log/nginx
-          #- /usr/local/docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
-          #- /data/nginx/conf.d:/etc/nginx/conf.d
           #- ${NGINX_DIR}/logs:/var/log/nginx
         ports:
           - 8089:80
