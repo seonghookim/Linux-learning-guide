@@ -44,22 +44,32 @@ CentOS Linux release 7.7.1908 (Core)
 
 ## Docker镜像下载及启动  
 到[Docker hub](https://hub.docker.com/)查询镜像。  
-#### &nbsp;&nbsp;&nbsp;&nbsp;[nginx](Docker/NGINX.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[tomcat](Docker/TOMCAT.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[mysql](Docker/MYSQL.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[redis](Docker/REDIS.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[gitlab](Docker/GITLAB.md)
+#### &nbsp;&nbsp;&nbsp;&nbsp;[nginx](Docker/NGINX.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[tomcat](Docker/TOMCAT.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[mysql](Docker/MYSQL.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[redis](Docker/REDIS.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[gitlab](Docker/GITLAB.md)  
 
-## 启动Docker镜像  
-  * 查看容器状态
+#### &nbsp;&nbsp;&nbsp;&nbsp;[nginx+tomcat+mysql+redis](Docker/NTMR.md)
+
+## Docker常用命令  
+  * 查看镜像
+  ```bash
+    docker images
+  ```
+  * 删除镜像
+  ```bash
+    docker rmi <image_id(前3位即可)>
+  ```
+  * 查看容器
   ```bash
     docker ps -a
-  ```
-  * 进入容器
-  ```bash
-    docker exec -it nginx /bin/bash
-  ```  
+  ```    
   * 停止容器
   ```bash
-    docker stop nginx
-  ```
+    docker stop <container_Id(前3位即可)>
+  ``` 
   * 删除容器
   ```bash
-    docker rm nginx
-  ```
+    docker rm <container_Id(前3位即可)>
+  ```   
+  * 进入容器
+  ```bash
+    docker exec -it <container_Name｜container_Id(前3位即可)> /bin/bash
+  ``` 
