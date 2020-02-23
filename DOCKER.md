@@ -44,7 +44,7 @@ CentOS Linux release 7.7.1908 (Core)
 
 ## Docker镜像下载及启动  
 到[Docker hub](https://hub.docker.com/)查询镜像。  
-#### [nginx](Docker/NGINX.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[tomcat](Docker/TOMCAT.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[mysql](Docker/MYSQL.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[redis](Docker/REDIS.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[gitlab](Docker/GITLAB.md)
+#### &nbsp;&nbsp;&nbsp;&nbsp;[nginx](Docker/NGINX.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[tomcat](Docker/TOMCAT.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[mysql](Docker/MYSQL.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[redis](Docker/REDIS.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[gitlab](Docker/GITLAB.md)
 
 ## 启动Docker镜像  
   * 查看容器状态
