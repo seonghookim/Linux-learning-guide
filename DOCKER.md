@@ -44,57 +44,9 @@ CentOS Linux release 7.7.1908 (Core)
 
 ## Docker镜像下载及启动  
 到[Docker hub](https://hub.docker.com/)查询镜像。  
-* [nginx](Docker/NGINX.md)
-* 查询镜像
-```bash
-  docker images
-```
-* 删除镜像
-```bash
-  docker rmi <image_name|image_Id(前3位即可)>
-``` 
+#### [nginx](Docker/NGINX.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[tomcat](Docker/TOMCAT.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[mysql](Docker/MYSQL.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[redis](Docker/REDIS.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[gitlab](Docker/GITLAB.md)
+
 ## 启动Docker镜像  
-* nginx
-  * 生成宿主机工作目录
-  ```bash
-    mkdir /usr/local/docker/nginx -p
-    cd /usr/local/docker/nginx
-    mkdir conf html logs -p
-  ```
-  * 使用docker-compose文件启动容器
-  ```bash
-    vi docker-compose.yml
-    ---docker-compose.yml文件---
-    version: '3'
-    services:
-      nginx:
-        container_name: nginx
-        image: nginx
-        #build: .
-        privileged: true
-        restart: always
-        volumes:
-          - /usr/local/docker/nginx/html:/usr/share/nginx/html
-          - /usr/local/docker/nginx/conf:/etc/nginx
-          - /usr/local/docker/nginx/logs:/var/log/nginx
-          #- /usr/local/docker/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
-          #- /data/nginx/conf.d:/etc/nginx/conf.d
-          #- ${NGINX_DIR}/logs:/var/log/nginx
-        ports:
-          - 8089:80
-    -------------------------
-    
-    docker-compose up -d
-  ```
-  * 使用docker命令行启动容器
-    ```bash
-      docker run --restart=always privileged=true --name=nginx \  
-      -v /usr/local/docker/nginx/html:/usr/share/nginx/html \  
-      -v /usr/local/docker/nginx/conf:/etc/nginx \  
-      -v /usr/local/docker/nginx/logs:/var/log/nginx \  
-      -p 8089:80  \
-      -d nginx
-    ```
   * 查看容器状态
   ```bash
     docker ps -a
