@@ -31,7 +31,7 @@ CentOS Linux release 7.7.1908 (Core)
 [root@localhost ~]# sudo chmod +x /usr/local/bin/docker-compose  
 [root@localhost ~]# docker-compose version  
 
-## 启动docker服务
+## docker服务
 [root@localhost ~]# systemctl start docker  #启动docker服务  
 [root@localhost ~]# systemctl enable docker #开机启动docker服务  
 #Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
