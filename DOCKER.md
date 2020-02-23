@@ -37,18 +37,18 @@ CentOS Linux release 7.7.1908 (Core)
 #Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
 [root@localhost ~]# systemctl status docker #查看docker服务状态  
 
-## Docker镜像加速
+## docker镜像加速
 [root@localhost ~]# vi /etc/docker/daemon.json  
 {"registry-mirrors": ["http://hub-mirror.c.163.com"]}  
 [root@localhost ~]# systemctl restart docker #事后重启docker  
 
-## Docker镜像下载及启动  
+## docker镜像下载及启动  
 到[Docker hub](https://hub.docker.com/)查询镜像。  
 #### &nbsp;&nbsp;&nbsp;&nbsp;[nginx](Docker/NGINX.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[tomcat](Docker/TOMCAT.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[mysql](Docker/MYSQL.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[redis](Docker/REDIS.md)&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;[gitlab](Docker/GITLAB.md)  
 
 #### &nbsp;&nbsp;&nbsp;&nbsp;[nginx+tomcat+mysql+redis](Docker/NTMR.md)
 
-## Docker常用命令  
+## docker常用命令  
   * 查看镜像
   ```bash
     docker images
