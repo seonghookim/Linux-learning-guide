@@ -42,16 +42,9 @@ CentOS Linux release 7.7.1908 (Core)
 {"registry-mirrors": ["http://hub-mirror.c.163.com"]}  
 [root@localhost ~]# systemctl restart docker #事后重启docker  
 
-## Docker镜像下载  
+## Docker镜像下载及启动  
 到[Docker hub](https://hub.docker.com/)查询镜像。  
-* 下载镜像
-```bash
-  docker pull nginx  
-  docker pull tomcat  
-  docker pull redis  
-  docker pull mysql/mysql-server  
-  docker pull rabbitmq:management
-```
+* [nginx](Docker/NGINX.md)
 * 查询镜像
 ```bash
   docker images
