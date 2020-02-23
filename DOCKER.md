@@ -45,7 +45,7 @@ CentOS Linux release 7.7.1908 (Core)
   docker pull mysql/mysql-server  
   docker pull rabbitmq:management
 ```
-* 查询下载镜像
+* 查询镜像
 ```bash
   docker images
 ```
@@ -59,9 +59,9 @@ CentOS Linux release 7.7.1908 (Core)
   ```bash
     mkdir /usr/local/docker/nginx -p
     cd /usr/local/docker/nginx
-    mkdir conf html logs
+    mkdir conf html logs -p
   ```
-  * 生成docker-compose.yml文件
+  * 使用docker-compose文件启动容器
   ```bash
     vi docker-compose.yml
     ---docker-compose.yml文件---
@@ -81,13 +81,20 @@ CentOS Linux release 7.7.1908 (Core)
           #- /data/nginx/conf.d:/etc/nginx/conf.d
           #- ${NGINX_DIR}/logs:/var/log/nginx
         ports:
-          - 80:80
+          - 8089:80
     -------------------------
-  ```
-  * 启动容器
-  ```bash
+    
     docker-compose up -d
   ```
+  * 使用docker命令行启动容器
+    ```bash
+      docker run --restart=always privileged=true --name=nginx \  
+      -v /usr/local/docker/nginx/html:/usr/share/nginx/html \  
+      -v /usr/local/docker/nginx/conf:/etc/nginx \  
+      -v /usr/local/docker/nginx/logs:/var/log/nginx \  
+      -p 8089:80  \
+      -d nginx
+    ```
   * 查看容器状态
   ```bash
     docker ps -a
