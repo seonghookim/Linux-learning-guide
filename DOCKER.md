@@ -2,6 +2,7 @@
 - [查看是否安装wget](#查看是否安装wget)
 - [替换阿里云yum源](#替换阿里云yum源)
 - [安装docker](#安装docker)
+- [安装docker-compose](#安装docker-compose)
 - [百度](https://www.baidu.com)
 - [启动docker服务](#启动docker服务)
 - [Docker镜像加速](#Docker镜像加速)
@@ -23,6 +24,12 @@ CentOS Linux release 7.7.1908 (Core)
 
 ## 安装docker
 [root@localhost ~]# yum install docker -y  
+
+## 安装docker-compose
+[docker-compose](https://docs.docker.com/compose/install/)
+[root@localhost ~]# sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose  
+[root@localhost ~]# sudo chmod +x /usr/local/bin/docker-compose  
+[root@localhost ~]# docker-compose version  
 
 ## 启动docker服务
 [root@localhost ~]# systemctl start docker  #启动docker服务  
