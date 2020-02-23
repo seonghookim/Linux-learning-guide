@@ -20,9 +20,9 @@ docker run --name=nginx --restart=always privileged=true -v /usr/local/docker/ng
     /usr/local/docker/nginx  
   * 新建docker-compose.yml文件  
     vi docker-compose.yml  
-  ```
-  version: '2'
-  services:
+    ```
+    version: '2'
+    services:
       nginx:
         container_name: nginx
         privileged: true
@@ -35,7 +35,7 @@ docker run --name=nginx --restart=always privileged=true -v /usr/local/docker/ng
         ports:
           - 8089:80
         image: nginx
-  ```
+    ```
   * 启动
 * 使用Dockerfile文件启动  
 
