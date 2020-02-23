@@ -26,7 +26,7 @@ CentOS Linux release 7.7.1908 (Core)
 [root@localhost ~]# yum install docker -y  
 
 ## 安装docker-compose
-[docker-compose](https://docs.docker.com/compose/install/)
+[docker-compose官网](https://docs.docker.com/compose/install/)  
 [root@localhost ~]# sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose  
 [root@localhost ~]# sudo chmod +x /usr/local/bin/docker-compose  
 [root@localhost ~]# docker-compose version  
