@@ -18,6 +18,7 @@ docker run --name=nginx --restart=always privileged=true -v /usr/local/docker/ng
   * 确认当前目录  
     [root@localhost nginx]# pwd  
     /usr/local/docker/nginx
+    
     vi docker-compose.yml  
     ```
     docker pull nginx  
