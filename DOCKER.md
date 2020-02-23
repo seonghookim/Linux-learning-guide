@@ -63,11 +63,11 @@ CentOS Linux release 7.7.1908 (Core)
   ```    
   * 停止容器
   ```bash
-    docker stop <container_Id(前3位即可)>
+    docker stop <container_Name｜container_Id(前3位即可)>
   ``` 
   * 删除容器
   ```bash
-    docker rm <container_Id(前3位即可)>
+    docker rm <container_Name｜container_Id(前3位即可)>
   ```   
   * 进入容器
   ```bash
