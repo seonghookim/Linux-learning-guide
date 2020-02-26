@@ -1,3 +1,4 @@
+```
 version: '3'
 services:
   nginx:
@@ -46,3 +47,4 @@ services:
       - /usr/local/docker/redis/conf:/usr/local/etc/redis
       - /usr/local/docker/redis/log:/var/log/redis
     
+```
