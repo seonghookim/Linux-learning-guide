@@ -35,7 +35,7 @@ services:
       --collation-server=utf8_general_ci
       --default_authentication_plugin=mysql_native_password
       --skip-name-resolve
-   redis:
+  redis:
     image: redis
     restart: always
     ports:
