@@ -12,8 +12,8 @@ mkdir conf data logs -p
 #### 启动容器
 * 使用docker-compose.yml文件启动  
   * 确认当前目录  
-    [root@localhost nginx]# pwd  
-    /usr/local/docker/nginx  
+    [root@localhost gitlab]# pwd  
+    /usr/local/docker/gitlab  
   * 新建docker-compose.yml文件  
     vi docker-compose.yml  
     ```
