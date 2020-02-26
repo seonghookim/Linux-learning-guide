@@ -10,10 +10,6 @@ cd /usr/local/docker/redis
 mkdir conf data logs -p
 ```
 #### 启动容器
-* 使用命令行启动  
-```
-docker run -d --name=redis --restart=always -p 6379:6379 redis  
-```
 * 使用docker-compose.yml文件启动  
   * 确认当前目录  
     [root@localhost redis]# pwd  
@@ -59,5 +55,3 @@ docker run -d --name=redis --restart=always -p 6379:6379 redis
     ```
     docker-compose up -d  
     ```
-* 使用Dockerfile文件启动  
-  待续...
